@@ -17,3 +17,5 @@ klaus.gramann@tu-berlin.de  https://orcid.org/0000-0003-2673-1832
 ajbrock@udel.edu https://orcid.org/0000-0002-7293-8140
 mendozanatural@gmail.com  https://orcid.org/0000-0003-2226-865X
 
+## Expert-annotated Independent Components (ICs)
+The expert-annotated labels of the ICs can be found in the field `expert_ica_labels`, and the class names in `ica_classes`. `expert_ica_labels(i)` is the Matlab-index of `ica_classes` for the i-th IC. ICs can be computed using the fields `data`, `icasphere`, and `icaweights` (e.g., `icaact = icaweights * icasphere * data`).
