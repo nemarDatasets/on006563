@@ -9,6 +9,9 @@ Continuous EEG from 12 with ICA weights.
 ### Subjects
 "Twelve observers took part in the Experiment (2 female; age range 21–25 years). All were right-handed, had normal or corrected-to-normal vision, and reported no history of neurological disorder. Observers were either paid or received course credit for participating. All observers provided written informed consent, and the experimental procedure was approved by the ethics committee of the Department of Psychology, University of Munich, in accordance with the Code of Ethics of the World Medical Association (Declaration of Helsinki)."
 
+## Expert-annotated Independent Components (ICs)
+The expert-annotated labels of the ICs can be found in the field `expert_ica_labels`, and the class names in `ica_classes`. `expert_ica_labels(i)` is the Matlab-index of `ica_classes` for the i-th IC. ICs can be computed using the fields `data`, `icasphere`, and `icaweights` (e.g., `icaact = icaweights * icasphere * data`).
+
 ## Details related to access to the data
 CC-BY
 
@@ -16,6 +19,3 @@ Contact persons:
 klaus.gramann@tu-berlin.de  https://orcid.org/0000-0003-2673-1832
 ajbrock@udel.edu https://orcid.org/0000-0002-7293-8140
 mendozanatural@gmail.com  https://orcid.org/0000-0003-2226-865X
-
-## Expert-annotated Independent Components (ICs)
-The expert-annotated labels of the ICs can be found in the field `expert_ica_labels`, and the class names in `ica_classes`. `expert_ica_labels(i)` is the Matlab-index of `ica_classes` for the i-th IC. ICs can be computed using the fields `data`, `icasphere`, and `icaweights` (e.g., `icaact = icaweights * icasphere * data`).
