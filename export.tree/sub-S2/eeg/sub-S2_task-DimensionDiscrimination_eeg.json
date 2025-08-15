@@ -1,0 +1,11 @@
+{
+  "PowerLineFrequency": 50,
+  "TaskName": "DimensionDiscrimination",
+  "EEGChannelCount": 63,
+  "EOGChannelCount": 1,
+  "EEGReference": "TP9,TP10",
+  "RecordingType": "continuous",
+  "RecordingDuration": 3962.318,
+  "SamplingFrequency": 500,
+  "SoftwareFilters": "n/a"
+}
