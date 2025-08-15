@@ -1,18 +1,12 @@
 {
-  "Name": "The Dimension-Based Attention Modulates Early Visual Processing",
-  "License": "CC0",
-  "Authors": [
-    ""
-  ],
-  "ReferencesAndLinks": [
-    ""
-  ],
+  "Name": "Cue",
+  "License": "CC-BY",
+  "Authors": ["Klaus Gramann, Thomas Töllner, Hermann J. Müller"],
+  "ReferencesAndLinks": ["Gramann, K., Töllner, T. and Müller, H.J. (2010), Dimension-based attention modulates early visual processing. Psychophysiology, 47: 968-978. https://doi.org/10.1111/j.1469-8986.2010.00998.x"],
   "BIDSVersion": "1.8.0",
   "HEDVersion": "8.1.0",
-  "GeneratedBy": [
-    {
-      "Name": "bids-matlab-tools",
-      "Version": "10.2"
-    }
-  ]
+  "GeneratedBy":[ {
+    "Name": "EEG-BIDS",
+    "Version": "10.2"
+  }]
 }
