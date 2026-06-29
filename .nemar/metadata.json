@@ -1,27 +1,82 @@
 {
   "version": "2.0",
-  "dataset_id": "on006563",
-  "source": "openneuro",
-  "source_id": "ds006563",
+  "pipeline_stage": "enriched",
   "title": "Dimension-based attention modulates early visual processing",
+  "license": "CC0",
+  "dataset_type": "raw",
   "authors": {
     "Klaus Gramann, Thomas Töllner, Hermann J. Müller": {}
   },
-  "license": "CC0",
-  "dataset_type": "raw",
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds006563.v1.0.0",
       "identifier_type": "DOI",
       "relation_type": "IsIdenticalTo"
+    },
+    {
+      "identifier": "10.1111/j.1469-8986.2010.00998.x",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/on006563",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on006563",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.1111/psyp.12290",
+      "identifier_type": "DOI",
+      "relation_type": "IsReferencedBy"
     }
   ],
-  "pipeline_stage": "seeded",
-  "bids_version": "1.8.0",
-  "recording_modality": [
+  "modalities": [
     "eeg"
   ],
-  "datatypes": [
-    "eeg"
-  ]
+  "resource_type_specific": "EEG Dataset",
+  "sizes": [
+    "0.0 KB (1 files)"
+  ],
+  "formats": [
+    ".fdt",
+    ".json",
+    ".md",
+    ".set",
+    ".tsv"
+  ],
+  "description": "This dataset comprises continuous 64-channel scalp EEG recordings from 12 subjects performing a visual attention task, with pre-computed independent component analysis (ICA) weights and expert-annotated component labels. Originally collected to investigate how dimension-based attention modulates early visual processing (Gramann et al., 2010), the data has been subsequently used for developing automated ICA component classification methods (Frølich et al., 2015). The dataset includes ICA decompositions computed using the infomax algorithm and provides expert annotations for independent components, making it valuable for both attention neuroscience and machine learning applications in EEG signal processing. ICA weights are pre-computed and included in the dataset.",
+  "methods_description": "EEG was recorded from 64 scalp channels referenced to Cz and re-referenced offline to linked mastoids. ICA was performed using the infomax algorithm implemented in Brain Vision Analyzer software (Brain Products GmbH). Continuous EEG recordings ranged from 56 to 66 minutes per subject during a visual task. Twelve observers (2 female; age range 21–25 years) participated. All were right-handed, had normal or corrected-to-normal vision, and reported no history of neurological disorder. All observers provided written informed consent, and the experimental procedure was approved by the ethics committee of the Department of Psychology, University of Munich, in accordance with the Code of Ethics of the World Medical Association (Declaration of Helsinki). Data was converted to BIDS format by Austin J. Brockmeier and Carlos H. Mendoza-Cardenas with permission from Klaus Gramann.",
+  "keywords": [
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "Attention",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D001288"
+    },
+    {
+      "term": "visual processing"
+    },
+    {
+      "term": "visual attention"
+    },
+    {
+      "term": "independent component analysis"
+    },
+    {
+      "term": "ICA component classification"
+    },
+    {
+      "term": "electroencephalography"
+    },
+    {
+      "term": "machine learning"
+    }
+  ],
+  "source_hash": "1c49dd86ead80c7beb8ea1233023e39d27ae63626fb06f45d5c53c9e7fce7263"
 }
