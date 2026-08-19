@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "enriched",
+  "pipeline_stage": "validated",
   "title": "Dimension-based attention modulates early visual processing",
-  "description": "This dataset comprises continuous EEG recordings from 12 subjects during a visual attention task, originally published by Gramann et al. (2010) to investigate dimension-based attention effects on early visual processing. The dataset includes 64-channel scalp EEG data with pre-computed ICA decomposition and expert-annotated independent component labels, making it valuable for studying automatic IC classification methods and visual attention mechanisms. This is a BIDS-converted version of the original dataset from OpenNeuro (ds006563).",
-  "methods_description": "EEG was recorded from 64 scalp channels referenced to Cz and re-referenced offline to linked mastoids during a visual task. ICA decomposition was performed using the infomax algorithm implemented in Brain Vision Analyzer software. Continuous recordings ranged from 56 to 66 minutes per subject. The dataset was converted to BIDS format by Austin J. Brockmeier and Carlos H. Mendoza-Cardenas.",
+  "description": "This dataset contains continuous 64-channel scalp EEG recordings from 12 right-handed subjects performing a visual attention task designed to examine dimension-based attentional modulation of early visual processing. The data include independent component analysis (ICA) decompositions with expert-annotated component labels, originally collected for a study on visual attention and later reused for research on automatic classification of independent components. The dataset was converted to BIDS format from the original recordings with permission from the original authors.",
+  "methods_description": "EEG was recorded from 64 scalp channels referenced to Cz and re-referenced offline to linked mastoids. Independent component analysis (ICA) was performed using the infomax algorithm implemented in Brain Vision Analyzer software (Brain Products GmbH). Recording durations ranged from 56 to 66 minutes per subject.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -14,23 +14,30 @@
       "term": "EEG"
     },
     {
-      "term": "attention"
-    },
-    {
-      "term": "visual processing"
+      "term": "visual attention"
     },
     {
       "term": "independent component analysis"
     },
     {
-      "term": "cognitive neuroscience"
+      "term": "event-related potentials"
+    },
+    {
+      "term": "Attention",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D001288"
+    },
+    {
+      "term": "Electroencephalography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
     }
   ],
   "related_identifiers": [
     {
       "identifier": "10.1111/j.1469-8986.2010.00998.x",
       "identifier_type": "DOI",
-      "relation_type": "References"
+      "relation_type": "IsDescribedBy"
     },
     {
       "identifier": "https://github.com/nemarDatasets/on006563",
