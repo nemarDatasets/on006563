@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "validated",
+  "pipeline_stage": "enriched",
   "title": "Dimension-based attention modulates early visual processing",
-  "description": "This dataset contains continuous 64-channel scalp EEG recordings from 12 right-handed subjects performing a visual attention task designed to examine dimension-based attentional modulation of early visual processing. The data include independent component analysis (ICA) decompositions with expert-annotated component labels, originally collected for a study on visual attention and later reused for research on automatic classification of independent components. The dataset was converted to BIDS format from the original recordings with permission from the original authors.",
-  "methods_description": "EEG was recorded from 64 scalp channels referenced to Cz and re-referenced offline to linked mastoids. Independent component analysis (ICA) was performed using the infomax algorithm implemented in Brain Vision Analyzer software (Brain Products GmbH). Recording durations ranged from 56 to 66 minutes per subject.",
+  "description": "Continuous 64-channel scalp EEG from 12 observers performing a visual dimension-based attention (cue) task, originally reported by Gramann, Töllner and Müller (2010). The recordings, 56-66 minutes each, include ICA decomposition weights and expert-annotated independent component labels. The dataset was later used to study automatic multi-class labeling of ICA components and is known as the \"Cue\" dataset.",
+  "methods_description": "64 scalp EEG channels were recorded referenced to Cz and re-referenced offline to linked mastoids. ICA was performed with the infomax algorithm in Brain Vision Analyzer. Twelve right-handed observers (age 21-25) performed a visual task. Expert labels of independent components are provided along with ICA weights and sphere matrices. Data were provided by Laura Frølich and, with permission from Klaus Gramann, converted to BIDS format by Austin J. Brockmeier and Carlos H. Mendoza-Cardenas.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -20,12 +20,10 @@
       "term": "independent component analysis"
     },
     {
-      "term": "event-related potentials"
+      "term": "artifact classification"
     },
     {
-      "term": "Attention",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D001288"
+      "term": "dimension-based attention"
     },
     {
       "term": "Electroencephalography",
@@ -65,7 +63,7 @@
     "eeg"
   ],
   "sizes": [
-    "6.0 GB (25 files)"
+    "5.63 GB (25 files)"
   ],
   "formats": [
     ".fdt",
